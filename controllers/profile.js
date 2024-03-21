@@ -12,6 +12,7 @@ const getUserProfileData = async function (req,res){
             if (err) {
                 con.release()
                 return res.send(err);
+                
             }
             res.send(result);
             con.release();
